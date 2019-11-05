@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<head>
+	<title>Monk's Cafe</title>
+</head>
+<body>
+	<h1>Monk's Cafe</h1>
+	<h3>"The Coffee Shop"</h3>
+	<img src="images/toms-restaurant.jpg" alt="Tom's Restaurant" width=40% height=30% class="mainImage">
+
+	<h2>Reservations</h2>
+	<div id="reservationWrap">
+		<div class="make">
+			<p><b>Make a Reservation</b></p>
+			<form>
+				<input type="text" placeholder="Jesse Pinkman"><br>
+				<input type="text" placeholder="October 11, 2019"><br>
+				<button>Confirm</button>
+			</form>
+		</div>
+		<div class="existing">
+			<p><b>Existing Reservations</b></p>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Day</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+
+	<!--This was the only way I could keep the below content from vertically merging with the above content. I'm not HTML savvy; I know there are definitely better ways of doing this.-->
+	<br><br><br><br><br><br><br>
+	
+	<h2>Come Dine With Us</h2>
+	<div id="map"></div>
+
+	<h2>Customer Reviews</h2>
+	<div id="reviewWrap">
+		<div class="reviewImage">
+			<img src="images/jerry.jpg" alt="Jerry" width=150% height=150%>
+		</div>
+		<div class="reviewText">
+			<p><i>"Big lettuce, big carrots, tomatoes like volleyballs."</i></p>
+			<p>-Jerry Seinfeld, on The BIG Salad</p>
+		</div>
+	</div>
+
+	<br>
+
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/main.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd94ABqjd9IprmWRqcPuUJhu9nK__254Q&callback=initMap"></script>
+</body>
+</html>
